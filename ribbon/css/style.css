@@ -1,0 +1,14 @@
+
+
+.vx-rbn-btn[btn-icon="new_32"]::before{ content:url('../img/main/new_32.png'); }
+.vx-rbn-btn[btn-icon="open_32"]::before{ content:url('../img/main/open_32.png'); }
+.vx-rbn-btn[btn-icon="save"]::before{ content:url('../img/main/save.png'); }
+.vx-rbn-btn[btn-icon="saveas"]::before{ content:url('../img/main/save_as.png'); }
+.vx-rbn-btn[btn-icon="import"]::before{ content:url('../img/main/import.png'); }
+.vx-rbn-btn[btn-icon="export"]::before{ content:url('../img/main/export.png'); }
+
+.select-items div[icon="save"]::before{ content:url('../img/main/save.png'); }
+.select-items div[icon="export"]::before{ content:url('../img/main/export.png'); }
+
+.select-selected[icon="save"]::before{ content:url('../img/main/save.png'); }
+.select-selected[icon="export"]::before{ content:url('../img/main/export.png'); }

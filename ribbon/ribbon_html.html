@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="vx-ui-ribbon/ribbon.css">
+</head>
+<body>
+  <h2>HTML Version</h2>
+  <div class="vx-rbn-cntrl">
+    <div class="vx-rbn-headerbar">
+            <div class="vx-rbn-titlebar">Irirs</div>
+          <button class="vx-rbn-tlbr-btn"></button>
+          <button class="vx-rbn-tlbr-btn"></button>
+          <button class="vx-rbn-tlbr-btn"></button>
+    </div>
+    <!-- Tab links -->
+    <div class="vx-rbn-tab-header">
+      <button class="vx-rbn-tab" id="mainTab">Title</button>
+      <button class="vx-rbn-tab" id="defaultTab" onclick="OnTabChange(this)">App</button>
+      <button class="vx-rbn-tab" onclick="OnTabChange(this)">Edit</button>
+      <button class="vx-rbn-tab" onclick="OnTabChange(this)">Connect</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="App" class="vx-rbn-tab-content" >
+      <ul data-width=200>
+        <li>
+          <table class="vx-rbn-tab-group">
+            <tr>
+              <td>
+                <ul data-width= 200px>
+                  <li><button class="vx-rbn-btn" btn-icon="new_32" btn-size="large">New</button></li>
+                  <li><button class="vx-rbn-btn" btn-icon="open_32" btn-size="large">Open</button></li>
+                  <li><div class="vx-rbn-break"></div></li>
+                  <li><button class="vx-rbn-btn" btn-icon="import">Import</button></li>
+                  <li><button class="vx-rbn-btn" btn-icon="export">Export</button></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="vx-rbn-tab-group-footer">
+                  Text
+                </div>
+              </td>
+            </tr>
+          </table>
+        </li>
+        <li>
+          <table class="vx-rbn-tab-group">
+            <tr>
+              <td>
+                <ul>
+                  <li><button class="vx-rbn-btn" btn-icon="new_32" btn-size="large">New</button></li>
+                  <li><button class="vx-rbn-btn" btn-icon="open_32" btn-size="large">Open</button></li>
+                  <li><button class="vx-rbn-btn" btn-icon="save">Save</button></li>
+                  <li><button class="vx-rbn-btn" btn-icon="saveas">Save As</button></li>
+                  <li><div class="vx-rbn-break"></div></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div style="color: #555; text-align: center;">
+                  Text
+                </div>
+              </td>
+            </tr>
+          </table>
+        </li>
+
+                <!--
+                <li><button class="vx-rbn-btn">Save</button></li>
+                <li><button class="vx-rbn-btn">Save</button></li>
+                <li><button class="vx-rbn-btn">Save</button></li>
+                <li><button class="vx-rbn-btn" >Save</button></li>
+                <div class="vx-rbn-seperator"></div>
+                <li><button class="vx-rbn-btn">Save</button></li>
+                <li>
+                    <div class="custom-select" style="width:100px;">
+                      <select>
+                        <option value="0">Select car:</option>
+                        <option value="1">Audi</option>
+                        <option value="2">BMW</option>
+                        <option value="3">Citroen</option>
+                        <option value="4">Ford</option>
+                        <option value="5">Honda</option>
+                        <option value="6">Jaguar</option>
+                        <option value="7">Land Rover</option>
+                        <option value="8">Mercedes</option>
+                        <option value="9">Mini</option>
+                        <option value="10">Nissan</option>
+                        <option value="11">Toyota</option>
+                        <option value="12">Volvo</option>
+                    </select>
+                </div>
+            </li>
+            <li><button class="vx-rbn-btn">Save</button></li>
+            <li><button class="vx-rbn-btn">Save</button></li>
+            <li><button class="vx-rbn-btn">Save</button></li>
+            <li><button class="vx-rbn-btn">Save</button></li>
+          -->
+        </ul>
+      </div>
+
+      <div id="Edit" class="vx-rbn-tab-content">
+        <ul>
+          <li><button class="vx-rbn-btn">Open</button></li>
+          <li><button class="vx-rbn-btn">Save</button></li>
+          <div class="vx-rbn-seperator"></div>
+          <li><button class="vx-rbn-btn">Save As</button></li>
+          <li><button class="vx-rbn-btn">Save</button></li>
+          <li><button class="vx-rbn-btn">Open</button></li>
+          <li><button class="vx-rbn-btn">Save</button></li>
+          <div class="vx-rbn-seperator"></div>
+          <li><button class="vx-rbn-btn">Save As</button></li>
+          <li><button class="vx-rbn-btn">Save</button></li>
+          <li><button class="vx-rbn-btn">Save</button></li>
+          <li><button class="vx-rbn-btn">Open</button></li>
+          <li><button class="vx-rbn-btn">Save</button></li>
+          <div class="vx-rbn-seperator"></div>
+          <li><button class="vx-rbn-btn">Save As</button></li>
+          <li><button class="vx-rbn-btn">Save</button></li>
+          <li><button class="vx-rbn-btn">Save</button></li>
+        </ul>
+      </div>
+
+      <div id="Connect" class="vx-rbn-tab-content">
+        <ul>
+          <li><button class="vx-rbn-btn">Save</button></li>
+          <li><button class="vx-rbn-btn">Save</button></li>
+          <div class="vx-rbn-seperator"></div>
+          <li><button class="vx-rbn-btn">Save As</button></li>
+          <li><button class="vx-rbn-btn">Save</button></li>
+          <li><button class="vx-rbn-btn">Save</button></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      Content Goes Here
+    </div>
+  </div>
+</body>
+<script>
+
+
+  function OnTabChange(evt) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("vx-rbn-tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("vx-rbn-tab");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(evt.innerHTML).style.display = "block";
+
+    evt.className += " active";
+  }
+
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultTab").click();
+
+
+var x, i, j, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select");
+for (i = 0; i < x.length; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < selElmnt.length; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var i, s, h;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < s.length; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            break;
+          }
+        }
+        h.click();
+      });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+}
+
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  for (i = 0; i < y.length; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < x.length; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);
+
+</script>
+</html>
